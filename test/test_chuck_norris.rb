@@ -1,5 +1,4 @@
-require "minitest/autorun"
-require "minitest/pride"
+require "test_helper"
 require "chuck_norris"
 
 describe ChuckNorris do
