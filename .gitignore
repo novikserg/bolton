@@ -6,3 +6,4 @@ pkg
 tmp
 *.gem
 .ruby-version
+.byebug_history
