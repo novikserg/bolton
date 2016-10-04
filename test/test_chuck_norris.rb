@@ -3,7 +3,12 @@ require "chuck_norris"
 
 describe ChuckNorris do
   before do
+    VCR.insert_cassette("test_chuck_norris")
     @chuck = ChuckNorris.new
+  end
+
+  after do
+    VCR.eject_cassette
   end
 
   describe "when asked for all jokes" do
