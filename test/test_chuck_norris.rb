@@ -1,7 +1,6 @@
 require "minitest/autorun"
 require "minitest/pride"
 require "chuck_norris"
-require "byebug"
 
 describe ChuckNorris do
   before do
