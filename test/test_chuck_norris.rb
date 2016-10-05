@@ -30,12 +30,28 @@ describe ChuckNorris do
       @joke = @chuck.jokes(46).get.value
     end
 
-    it "gives an object back" do
-      assert_equal @joke.joke, "Chuck Norris once ate three 72 oz. steaks in one hour. He spent the first 45 minutes having sex with his waitress."
+    it "returns an object-like response" do
+      assert_equal @joke.categories, ["explicit"]
     end
 
-    it "allows access to nested objects" do
-      assert_equal @joke.categories, ["explicit"]
+    describe "with first name and last name specified" do
+      before do
+        @joke = @chuck.jokes(46).get(firstName: "John", lastName: "Doe").value
+      end
+
+      it "uses the names specified" do
+        assert_includes @joke.joke, "John Doe once ate three 72 oz. steaks"
+      end
+    end
+
+    describe "with array-like query param" do
+      before do
+        @joke = @chuck.jokes.random.get(limitTo: ["nerdy"]).value
+      end
+
+      it "uses the names specified" do
+        assert_includes @joke.categories, "nerdy"
+      end
     end
   end
 

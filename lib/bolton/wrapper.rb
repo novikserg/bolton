@@ -1,5 +1,6 @@
 require "net/http"
 require "json"
+require "byebug"
 
 class Wrapper
   attr_reader :base_url, :resource_id, :method
@@ -10,7 +11,10 @@ class Wrapper
     @method = method
   end
 
-  def get
+  def get(query_params = {})
+    uri = URI(url)
+    uri.query = URI.encode_www_form(query_params)
+    response = Net::HTTP.get(uri)
     JSON.parse(response, object_class: OpenStruct)
   end
 
@@ -18,14 +22,6 @@ class Wrapper
 
   def method_missing(method, *args)
     Wrapper.new(url, method, *args)
-  end
-
-  def response
-    Net::HTTP.get(uri)
-  end
-
-  def uri
-    URI(url)
   end
 
   def url
