@@ -1,9 +1,9 @@
 require "test_helper"
-require "chuck_norris"
+require_relative "chuck_norris"
 
 describe ChuckNorris do
   before do
-    VCR.insert_cassette("test_chuck_norris")
+    VCR.insert_cassette("chuck_norris", record: :once)
     @chuck = ChuckNorris.new
   end
 

@@ -1,4 +1,3 @@
-require "test_helper"
 require "bolton"
 
 class ChuckNorris < Bolton::API
