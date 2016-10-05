@@ -1,9 +1,10 @@
 require "test_helper"
 require_relative "json_placeholder"
+require "byebug"
 
 describe JsonPlaceholder do
   before do
-    VCR.insert_cassette("json_placeholder", record: :once)
+    VCR.insert_cassette("json_placeholder")
     @client = JsonPlaceholder.new
   end
 
@@ -11,14 +12,24 @@ describe JsonPlaceholder do
     VCR.eject_cassette
   end
 
+  describe "when creating a resource" do
+    before do
+      @post = @client.posts.post(title: "Michael Bolton", body: "is a major cinaphile")
+    end
+
+    it "returns an object-like response with correct attributes" do
+      assert_equal @post.title, "Michael Bolton"
+      assert_equal @post.body, "is a major cinaphile"
+    end
+  end
+
   describe "when updating a resource" do
     before do
-      @post = @client.posts(1).put(title: "Michael Bolton", body: "is a major cinaphile", userId: 12)
+      @post = @client.posts(1).put(userId: 12)
     end
 
     it "returns an object-like response with new attributes" do
-      assert_equal @post.title, "Michael Bolton"
-      assert_equal @post.body, "is a major cinaphile"
+      assert_equal @post.userId, 12
     end
   end
 end
