@@ -43,16 +43,6 @@ describe ChuckNorris do
         assert_includes @joke.joke, "John Doe once ate three 72 oz. steaks"
       end
     end
-
-    describe "with array-like query param" do
-      before do
-        @joke = @chuck.jokes.random.get(limitTo: ["nerdy"]).value
-      end
-
-      it "uses the names specified" do
-        assert_includes @joke.categories, "nerdy"
-      end
-    end
   end
 
   describe "when asked for a random joke" do
