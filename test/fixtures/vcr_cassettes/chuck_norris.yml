@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.icndb.com/jokes/46?firstName=John&lastName=Doe
+    uri: http://api.icndb.com/jokes
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Oct 2016 14:44:34 GMT
+      - Fri, 07 Oct 2016 02:54:37 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d937b3e5cc4897de49fe70532a8d5ff651475678674; expires=Thu, 05-Oct-17
-        14:44:34 GMT; path=/; domain=.icndb.com; HttpOnly
+      - __cfduid=d47d4a7f84ebe390c4596ca298ebbc2161475808877; expires=Sat, 07-Oct-17
+        02:54:37 GMT; path=/; domain=.icndb.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -36,51 +36,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ed1a70341d74ee4-DME
-    body:
-      encoding: ASCII-8BIT
-      string: '{ "type": "success", "value": { "id": 46, "joke": "John Doe once ate
-        three 72 oz. steaks in one hour. He spent the first 45 minutes having sex
-        with his waitress.", "categories": ["explicit"] } }'
-    http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:44:36 GMT
-- request:
-    method: get
-    uri: http://api.icndb.com/jokes/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 05 Oct 2016 14:44:34 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d3068e5a8dc04e4d6160f7207fb7eac0c1475678674; expires=Thu, 05-Oct-17
-        14:44:34 GMT; path=/; domain=.icndb.com; HttpOnly
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ed1a704367a4f50-DME
+      - 2ede11ce245a4ef6-DME
     body:
       encoding: ASCII-8BIT
       string: '{ "type": "success", "value": [ { "id": 1, "joke": "Chuck Norris uses
@@ -1100,55 +1056,7 @@ http_interactions:
         down websites without due process, not SOPA or PIPA.", "categories": [] }
         ]  }'
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:44:36 GMT
-- request:
-    method: get
-    uri: http://api.icndb.com/jokes//random//joke/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 05 Oct 2016 14:44:35 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d3084389346fe7696abadceafd9a4c99b1475678674; expires=Thu, 05-Oct-17
-        14:44:34 GMT; path=/; domain=.icndb.com; HttpOnly
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET
-      Cache-Control:
-      - no-cache, must-revalidate
-      Expires:
-      - Sat, 26 Jul 1997 05:00:00 GMT
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ed1a70612404e48-DME
-    body:
-      encoding: ASCII-8BIT
-      string: '{ "type": "success", "value": { "id": 373, "joke": "&quot;Sweating
-        bullets&quot; is literally what happens when Chuck Norris gets too hot.",
-        "categories": [] } }'
-    http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:44:36 GMT
+  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
 - request:
     method: get
     uri: http://api.icndb.com/jokes/46
@@ -1168,7 +1076,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Oct 2016 14:44:35 GMT
+      - Fri, 07 Oct 2016 02:54:38 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1176,8 +1084,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=db0ac2c3d24fb801120ebabb9a9c5c80a1475678675; expires=Thu, 05-Oct-17
-        14:44:35 GMT; path=/; domain=.icndb.com; HttpOnly
+      - __cfduid=d33ab88af9cb9e06cc54bf901769c1f771475808878; expires=Sat, 07-Oct-17
+        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -1185,12 +1093,103 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ed1a70a55404e8a-DME
+      - 2ede11cf87f94ee4-DME
     body:
       encoding: ASCII-8BIT
       string: '{ "type": "success", "value": { "id": 46, "joke": "Chuck Norris once
         ate three 72 oz. steaks in one hour. He spent the first 45 minutes having
         sex with his waitress.", "categories": ["explicit"] } }'
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:44:37 GMT
+  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
+- request:
+    method: get
+    uri: http://api.icndb.com/jokes/46?firstName=John&lastName=Doe
+    body:
+      encoding: UTF-8
+      string: firstName=John&lastName=Doe
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 02:54:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d075b28c10dd42ba96cf705336dd72af21475808878; expires=Sat, 07-Oct-17
+        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2ede11cff4d84f38-DME
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 46, "joke": "John Doe once ate
+        three 72 oz. steaks in one hour. He spent the first 45 minutes having sex
+        with his waitress.", "categories": ["explicit"] } }'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
+- request:
+    method: get
+    uri: http://api.icndb.com/jokes/random/joke
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 02:54:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6098f9101eb89eaa634afc85003675a91475808878; expires=Sat, 07-Oct-17
+        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Sat, 26 Jul 1997 05:00:00 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2ede11d0d0ff4ecc-DME
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 529, "joke": "Chuck Norris doesn''t
+        use Oracle, he is the Oracle.", "categories": ["nerdy"] } }'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
 recorded_with: VCR 3.0.3

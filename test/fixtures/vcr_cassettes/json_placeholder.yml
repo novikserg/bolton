@@ -1,132 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: put
-    uri: http://jsonplaceholder.typicode.com/posts/1?body=is%20a%20major%20cinaphile&title=Michael%20Bolton&userId=12
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 05 Oct 2016 14:39:57 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '13'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d50ca7253b408f41009c3a4004f8e12b51475678396; expires=Thu, 05-Oct-17
-        14:39:56 GMT; path=/; domain=.typicode.com; HttpOnly
-      X-Powered-By:
-      - Express
-      Vary:
-      - Origin, Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"d-sLElI1ucxzsvLyVtBmwEWQ"
-      Via:
-      - 1.1 vegur
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ed1a03c63574ecc-DME
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 1
-        }
-    http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:39:59 GMT
-- request:
-    method: put
-    uri: http://jsonplaceholder.typicode.com/posts/1
-    body:
-      encoding: UTF-8
-      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile&userId=12
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 05 Oct 2016 15:14:30 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=dc73c54a5882bbd723739d7bd4edc0c7a1475680469; expires=Thu, 05-Oct-17
-        15:14:29 GMT; path=/; domain=.typicode.com; HttpOnly
-      X-Powered-By:
-      - Express
-      Vary:
-      - Origin, Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"5c-eXG8IaSCuCgDUPmloUxxdw"
-      Via:
-      - 1.1 vegur
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ed1d2d6420d4e8a-DME
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        {
-          "title": "Michael Bolton",
-          "body": "is a major cinaphile",
-          "userId": 12,
-          "id": 1
-        }
-    http_version: 
-  recorded_at: Wed, 05 Oct 2016 15:14:30 GMT
-- request:
     method: post
-    uri: http://jsonplaceholder.typicode.com/posts/
+    uri: http://jsonplaceholder.typicode.com/posts?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
     body:
       encoding: UTF-8
-      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile&userId=12
+      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -140,16 +19,16 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Wed, 05 Oct 2016 15:14:30 GMT
+      - Fri, 07 Oct 2016 02:54:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '94'
+      - '78'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d8ed8c4669f7865907ef5c20879c5e0aa1475680470; expires=Thu, 05-Oct-17
-        15:14:30 GMT; path=/; domain=.typicode.com; HttpOnly
+      - __cfduid=db8fbce003d4c1cbfc645f5d969a9ae941475808876; expires=Sat, 07-Oct-17
+        02:54:36 GMT; path=/; domain=.typicode.com; HttpOnly
       X-Powered-By:
       - Express
       Vary:
@@ -165,22 +44,325 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - W/"5e-EUk+CuFpuO2Gwe1SH5ykSg"
+      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
       Via:
       - 1.1 vegur
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ed1d2dad0a04e8a-DME
+      - 2ede11c8076d4e60-DME
     body:
       encoding: UTF-8
       string: |-
         {
           "title": "Michael Bolton",
           "body": "is a major cinaphile",
-          "userId": 12,
           "id": 101
         }
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 15:14:30 GMT
+  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
+- request:
+    method: put
+    uri: http://jsonplaceholder.typicode.com/posts/1?userId=12
+    body:
+      encoding: UTF-8
+      string: userId=12
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 02:54:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '29'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d09435b1ae1eb28f3dda7c8632ccf671f1475808877; expires=Sat, 07-Oct-17
+        02:54:37 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d-V2AxA+UTJCT/Ru7qfPCiqA"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2ede11ca452f4e2a-DME
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "userId": 12,
+          "id": 1
+        }
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
+- request:
+    method: get
+    uri: https://api.stripe.com/v1/charges
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic c2tfdGVzdF9iTTZ2OGFsSzBTVzZCSzAwd2xyNnpJcUM6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Oct 2016 02:54:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5247'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Request-Id:
+      - req_9KTSmqrPmGyy3V
+      Stripe-Version:
+      - '2015-03-24'
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "object": "list",
+          "data": [
+            {
+              "id": "ch_15ponjAV9fXgRPvYbvqBzGgX",
+              "object": "charge",
+              "amount": 1100,
+              "amount_refunded": 0,
+              "application_fee": null,
+              "balance_transaction": "txn_15ponjAV9fXgRPvYnTcrRmj5",
+              "captured": true,
+              "created": 1428621071,
+              "currency": "eur",
+              "customer": null,
+              "description": "wweeeaa",
+              "destination": null,
+              "dispute": null,
+              "failure_code": null,
+              "failure_message": null,
+              "fraud_details": {},
+              "invoice": null,
+              "livemode": false,
+              "metadata": {},
+              "order": null,
+              "paid": true,
+              "receipt_email": null,
+              "receipt_number": null,
+              "refunded": false,
+              "refunds": {
+                "object": "list",
+                "data": [],
+                "has_more": false,
+                "total_count": 0,
+                "url": "/v1/charges/ch_15ponjAV9fXgRPvYbvqBzGgX/refunds"
+              },
+              "shipping": null,
+              "source": {
+                "id": "card_15poniAV9fXgRPvYE1GGasgz",
+                "object": "card",
+                "address_city": null,
+                "address_country": null,
+                "address_line1": null,
+                "address_line1_check": null,
+                "address_line2": null,
+                "address_state": null,
+                "address_zip": null,
+                "address_zip_check": null,
+                "brand": "Visa",
+                "country": "US",
+                "customer": null,
+                "cvc_check": "pass",
+                "dynamic_last4": null,
+                "exp_month": 4,
+                "exp_year": 2016,
+                "fingerprint": "WZ7sNWFE4eLUgsC8",
+                "funding": "credit",
+                "last4": "4242",
+                "metadata": {},
+                "name": null,
+                "tokenization_method": null
+              },
+              "source_transfer": null,
+              "statement_descriptor": null,
+              "status": "succeeded"
+            },
+            {
+              "id": "ch_15poLdAV9fXgRPvYHmjSJsvm",
+              "object": "charge",
+              "amount": 555500,
+              "amount_refunded": 0,
+              "application_fee": null,
+              "balance_transaction": "txn_15poLdAV9fXgRPvYw9TFXnj0",
+              "captured": true,
+              "created": 1428619329,
+              "currency": "aed",
+              "customer": null,
+              "description": "qeasd",
+              "destination": null,
+              "dispute": null,
+              "failure_code": null,
+              "failure_message": null,
+              "fraud_details": {},
+              "invoice": null,
+              "livemode": false,
+              "metadata": {},
+              "order": null,
+              "paid": true,
+              "receipt_email": null,
+              "receipt_number": null,
+              "refunded": false,
+              "refunds": {
+                "object": "list",
+                "data": [],
+                "has_more": false,
+                "total_count": 0,
+                "url": "/v1/charges/ch_15poLdAV9fXgRPvYHmjSJsvm/refunds"
+              },
+              "shipping": null,
+              "source": {
+                "id": "card_15poLYAV9fXgRPvYPVeM4Rfq",
+                "object": "card",
+                "address_city": null,
+                "address_country": null,
+                "address_line1": null,
+                "address_line1_check": null,
+                "address_line2": null,
+                "address_state": null,
+                "address_zip": null,
+                "address_zip_check": null,
+                "brand": "Visa",
+                "country": "US",
+                "customer": null,
+                "cvc_check": "pass",
+                "dynamic_last4": null,
+                "exp_month": 4,
+                "exp_year": 2016,
+                "fingerprint": "WZ7sNWFE4eLUgsC8",
+                "funding": "credit",
+                "last4": "4242",
+                "metadata": {},
+                "name": null,
+                "tokenization_method": null
+              },
+              "source_transfer": null,
+              "statement_descriptor": null,
+              "status": "succeeded"
+            },
+            {
+              "id": "ch_15pnpKAV9fXgRPvYRhKC52A0",
+              "object": "charge",
+              "amount": 15500,
+              "amount_refunded": 0,
+              "application_fee": null,
+              "balance_transaction": "txn_15pnpLAV9fXgRPvYFY30l1eE",
+              "captured": true,
+              "created": 1428617326,
+              "currency": "usd",
+              "customer": null,
+              "description": "qwe",
+              "destination": null,
+              "dispute": null,
+              "failure_code": null,
+              "failure_message": null,
+              "fraud_details": {},
+              "invoice": null,
+              "livemode": false,
+              "metadata": {},
+              "order": null,
+              "paid": true,
+              "receipt_email": null,
+              "receipt_number": null,
+              "refunded": false,
+              "refunds": {
+                "object": "list",
+                "data": [],
+                "has_more": false,
+                "total_count": 0,
+                "url": "/v1/charges/ch_15pnpKAV9fXgRPvYRhKC52A0/refunds"
+              },
+              "shipping": null,
+              "source": {
+                "id": "card_15pnpKAV9fXgRPvY5JjHqNz3",
+                "object": "card",
+                "address_city": null,
+                "address_country": null,
+                "address_line1": null,
+                "address_line1_check": null,
+                "address_line2": null,
+                "address_state": null,
+                "address_zip": null,
+                "address_zip_check": null,
+                "brand": "Visa",
+                "country": "US",
+                "customer": null,
+                "cvc_check": "pass",
+                "dynamic_last4": null,
+                "exp_month": 4,
+                "exp_year": 2016,
+                "fingerprint": "WZ7sNWFE4eLUgsC8",
+                "funding": "credit",
+                "last4": "4242",
+                "metadata": {},
+                "name": null,
+                "tokenization_method": null
+              },
+              "source_transfer": null,
+              "statement_descriptor": null,
+              "status": "succeeded"
+            }
+          ],
+          "has_more": false,
+          "url": "/v1/charges"
+        }
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 02:54:39 GMT
 recorded_with: VCR 3.0.3

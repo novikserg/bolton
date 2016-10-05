@@ -3,35 +3,43 @@ require "json"
 require "byebug"
 
 class Wrapper
-  attr_reader :url
+  class << self
+    private
+    def add_method(http_method)
+      define_method(http_method) do |query_params = {}|
+        request(http_method, query_params)
+      end
+    end
+  end
 
-  def initialize(base_url, method, *args)
+  attr_reader :url, :basic_auth
+
+  add_method :get
+  add_method :post
+  add_method :put
+  add_method :patch
+  add_method :delete
+
+  def initialize(base_url, method, basic_auth, *args)
     resource_id = args.first
-    @url = "#{base_url}/#{method}/#{resource_id}"
-  end
-
-  def get(query_params = {})
-    response = HTTParty.get(url, query: query_params)
-    parsed_response(response)
-  end
-
-  def post(query_params = {})
-    response = HTTParty.post(url, body: query_params)
-    parsed_response(response)
-  end
-
-  def put(query_params = {})
-    response = HTTParty.put(url, body: query_params)
-    parsed_response(response)
+    @url = "#{base_url}/#{method}"
+    @url << "/#{resource_id}" if resource_id
+    @basic_auth = basic_auth
   end
 
   private
 
-  def parsed_response(response)
-    JSON.parse(response.body, object_class: OpenStruct)
+  def request(method, query_params={})
+    options = { query: query_params, body: query_params, basic_auth: basic_auth }
+    response = HTTParty.public_send(method, url, options)
+    parsed_response(response)
   end
 
   def method_missing(method, *args)
-    Wrapper.new(url, method, *args)
+    Wrapper.new(url, method, basic_auth, *args)
+  end
+
+  def parsed_response(response)
+    JSON.parse(response.body, object_class: OpenStruct)
   end
 end

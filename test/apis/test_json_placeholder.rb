@@ -1,5 +1,6 @@
 require "test_helper"
 require_relative "json_placeholder"
+require_relative "stripe"
 require "byebug"
 
 describe JsonPlaceholder do
@@ -31,5 +32,10 @@ describe JsonPlaceholder do
     it "returns an object-like response with new attributes" do
       assert_equal @post.userId, 12
     end
+  end
+
+  it "" do
+    @stripe = Stripe.new
+    assert_equal @stripe.charges.get.data.first.id, "ch_15ponjAV9fXgRPvYbvqBzGgX"
   end
 end
