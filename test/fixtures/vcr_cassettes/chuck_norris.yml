@@ -2,6 +2,50 @@
 http_interactions:
 - request:
     method: get
+    uri: http://api.icndb.com/jokes/46?firstName=John&lastName=Doe
+    body:
+      encoding: UTF-8
+      string: firstName=John&lastName=Doe
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 02:54:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d075b28c10dd42ba96cf705336dd72af21475808878; expires=Sat, 07-Oct-17
+        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2ede11cff4d84f38-DME
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 46, "joke": "John Doe once ate
+        three 72 oz. steaks in one hour. He spent the first 45 minutes having sex
+        with his waitress.", "categories": ["explicit"] } }'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
+- request:
+    method: get
     uri: http://api.icndb.com/jokes
     body:
       encoding: US-ASCII
@@ -19,7 +63,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 07 Oct 2016 02:54:37 GMT
+      - Fri, 07 Oct 2016 05:29:57 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,8 +71,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d47d4a7f84ebe390c4596ca298ebbc2161475808877; expires=Sat, 07-Oct-17
-        02:54:37 GMT; path=/; domain=.icndb.com; HttpOnly
+      - __cfduid=d0fe60ce4794a3bbde92cd76903521aec1475818197; expires=Sat, 07-Oct-17
+        05:29:57 GMT; path=/; domain=.icndb.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -36,7 +80,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ede11ce245a4ef6-DME
+      - 2edef55653c64ede-DME
     body:
       encoding: ASCII-8BIT
       string: '{ "type": "success", "value": [ { "id": 1, "joke": "Chuck Norris uses
@@ -1056,95 +1100,7 @@ http_interactions:
         down websites without due process, not SOPA or PIPA.", "categories": [] }
         ]  }'
     http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
-- request:
-    method: get
-    uri: http://api.icndb.com/jokes/46
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 07 Oct 2016 02:54:38 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d33ab88af9cb9e06cc54bf901769c1f771475808878; expires=Sat, 07-Oct-17
-        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ede11cf87f94ee4-DME
-    body:
-      encoding: ASCII-8BIT
-      string: '{ "type": "success", "value": { "id": 46, "joke": "Chuck Norris once
-        ate three 72 oz. steaks in one hour. He spent the first 45 minutes having
-        sex with his waitress.", "categories": ["explicit"] } }'
-    http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
-- request:
-    method: get
-    uri: http://api.icndb.com/jokes/46?firstName=John&lastName=Doe
-    body:
-      encoding: UTF-8
-      string: firstName=John&lastName=Doe
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 07 Oct 2016 02:54:38 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d075b28c10dd42ba96cf705336dd72af21475808878; expires=Sat, 07-Oct-17
-        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ede11cff4d84f38-DME
-    body:
-      encoding: ASCII-8BIT
-      string: '{ "type": "success", "value": { "id": 46, "joke": "John Doe once ate
-        three 72 oz. steaks in one hour. He spent the first 45 minutes having sex
-        with his waitress.", "categories": ["explicit"] } }'
-    http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
+  recorded_at: Fri, 07 Oct 2016 05:29:57 GMT
 - request:
     method: get
     uri: http://api.icndb.com/jokes/random/joke
@@ -1164,7 +1120,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 07 Oct 2016 02:54:38 GMT
+      - Fri, 07 Oct 2016 05:29:57 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1172,8 +1128,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d6098f9101eb89eaa634afc85003675a91475808878; expires=Sat, 07-Oct-17
-        02:54:38 GMT; path=/; domain=.icndb.com; HttpOnly
+      - __cfduid=d6d563b63a7773044eef9571dc7f627291475818197; expires=Sat, 07-Oct-17
+        05:29:57 GMT; path=/; domain=.icndb.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -1185,11 +1141,100 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2ede11d0d0ff4ecc-DME
+      - 2edef558017d4ec6-DME
     body:
       encoding: ASCII-8BIT
-      string: '{ "type": "success", "value": { "id": 529, "joke": "Chuck Norris doesn''t
-        use Oracle, he is the Oracle.", "categories": ["nerdy"] } }'
+      string: '{ "type": "success", "value": { "id": 222, "joke": "Industrial logging
+        isn''t the cause of deforestation. Chuck Norris needs toothpicks.", "categories":
+        [] } }'
     http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:38 GMT
+  recorded_at: Fri, 07 Oct 2016 05:29:57 GMT
+- request:
+    method: get
+    uri: http://api.icndb.com/jokes/46
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 05:29:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc132db3eae393e9b78ec6711a344c2491475818199; expires=Sat, 07-Oct-17
+        05:29:59 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2edef561827b4ec6-DME
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 46, "joke": "Chuck Norris once
+        ate three 72 oz. steaks in one hour. He spent the first 45 minutes having
+        sex with his waitress.", "categories": ["explicit"] } }'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 05:29:59 GMT
+- request:
+    method: get
+    uri: http://api.icndb.com/jokes/46/jokes/46?firstName=John&lastName=Doe
+    body:
+      encoding: UTF-8
+      string: firstName=John&lastName=Doe
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 05:29:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5027769a94bd4b383930ae5f3718ed451475818199; expires=Sat, 07-Oct-17
+        05:29:59 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2edef561f38f4e12-DME
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 46, "joke": "John Doe once ate
+        three 72 oz. steaks in one hour. He spent the first 45 minutes having sex
+        with his waitress.", "categories": ["explicit"] } }'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 05:29:59 GMT
 recorded_with: VCR 3.0.3

@@ -1,127 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://jsonplaceholder.typicode.com/posts?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
-    body:
-      encoding: UTF-8
-      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      Date:
-      - Fri, 07 Oct 2016 02:54:37 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '78'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=db8fbce003d4c1cbfc645f5d969a9ae941475808876; expires=Sat, 07-Oct-17
-        02:54:36 GMT; path=/; domain=.typicode.com; HttpOnly
-      X-Powered-By:
-      - Express
-      Vary:
-      - Origin, X-HTTP-Method-Override, Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
-      Via:
-      - 1.1 vegur
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ede11c8076d4e60-DME
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "title": "Michael Bolton",
-          "body": "is a major cinaphile",
-          "id": 101
-        }
-    http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
-- request:
-    method: put
-    uri: http://jsonplaceholder.typicode.com/posts/1?userId=12
-    body:
-      encoding: UTF-8
-      string: userId=12
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 07 Oct 2016 02:54:37 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '29'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d09435b1ae1eb28f3dda7c8632ccf671f1475808877; expires=Sat, 07-Oct-17
-        02:54:37 GMT; path=/; domain=.typicode.com; HttpOnly
-      X-Powered-By:
-      - Express
-      Vary:
-      - Origin, Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"1d-V2AxA+UTJCT/Ru7qfPCiqA"
-      Via:
-      - 1.1 vegur
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2ede11ca452f4e2a-DME
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "userId": 12,
-          "id": 1
-        }
-    http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:37 GMT
-- request:
     method: get
     uri: https://api.stripe.com/v1/charges
     body:
@@ -144,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 07 Oct 2016 02:54:39 GMT
+      - Fri, 07 Oct 2016 05:29:57 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -162,7 +41,7 @@ http_interactions:
       Cache-Control:
       - no-cache, no-store
       Request-Id:
-      - req_9KTSmqrPmGyy3V
+      - req_9KVxOwGe4OOKbj
       Stripe-Version:
       - '2015-03-24'
       Strict-Transport-Security:
@@ -364,5 +243,126 @@ http_interactions:
           "url": "/v1/charges"
         }
     http_version: 
-  recorded_at: Fri, 07 Oct 2016 02:54:39 GMT
+  recorded_at: Fri, 07 Oct 2016 05:29:57 GMT
+- request:
+    method: post
+    uri: http://jsonplaceholder.typicode.com/posts?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
+    body:
+      encoding: UTF-8
+      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 05:29:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '78'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d76600be9a70bae70d78b1051a2d79c1e1475818197; expires=Sat, 07-Oct-17
+        05:29:57 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, X-HTTP-Method-Override, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2edef55972d84ec6-DME
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "title": "Michael Bolton",
+          "body": "is a major cinaphile",
+          "id": 101
+        }
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 05:29:58 GMT
+- request:
+    method: put
+    uri: http://jsonplaceholder.typicode.com/posts/1?userId=12
+    body:
+      encoding: UTF-8
+      string: userId=12
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2016 05:29:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '29'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1894dc13f7e23f5d3ff80779ac60c6ce1475818198; expires=Sat, 07-Oct-17
+        05:29:58 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d-V2AxA+UTJCT/Ru7qfPCiqA"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2edef55d86c74ec6-DME
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "userId": 12,
+          "id": 1
+        }
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 05:29:59 GMT
 recorded_with: VCR 3.0.3

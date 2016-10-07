@@ -1,6 +1,6 @@
 require "bolton/version"
 require "bolton/api"
-require "bolton/wrapper"
+require "bolton/request"
 
 module Bolton
   # Your code goes here...

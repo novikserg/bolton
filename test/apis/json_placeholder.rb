@@ -1,7 +1,11 @@
 require "bolton"
 
-class JsonPlaceholder < Bolton::API
+class JsonPlaceholder
+  include Bolton::API
+
+  attr_reader :api_url
+
   def initialize
-    @base_host = "http://jsonplaceholder.typicode.com"
+    @api_url = "http://jsonplaceholder.typicode.com"
   end
 end

@@ -1,9 +1,37 @@
+require_relative "request"
+require "forwardable"
+
 module Bolton
-  class API
-    attr_reader :base_host, :basic_auth
+  module API
+    extend Forwardable
+
+    private
+
+    def_delegators :request, :get, :post, :put, :patch, :delete
+
+    def api_url
+      raise NotImplementedError
+    end
+
+    def default_options
+      {}
+    end
+
+    def request
+      @request ||= Request.new(api_url, default_options)
+    end
 
     def method_missing(method, *args)
-      Wrapper.new(base_host, method, basic_auth, *args)
+      if method =~ /^[a-zA-Z_\d]*$/
+        request.update(method, args.first)
+        self
+      else
+        super
+      end
+    end
+
+    def respond_to_missing?(method, *)
+      method =~ /^[a-zA-Z_\d]*$/
     end
   end
 end

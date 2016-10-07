@@ -1,7 +1,11 @@
 require "bolton"
 
-class ChuckNorris < Bolton::API
+class ChuckNorris
+  include Bolton::API
+
+  attr_reader :api_url
+
   def initialize
-    @base_host = "http://api.icndb.com"
+    @api_url = "http://api.icndb.com"
   end
 end
