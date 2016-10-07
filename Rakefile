@@ -6,11 +6,4 @@ Rake::TestTask.new do |t|
   t.pattern = "test/**/test_*.rb"
 end
 
-namespace :test do
-  task :coverage do
-    ENV["COVERAGE"] = "true"
-    Rake::Task["test"].invoke
-  end
-end
-
 task default: :test
