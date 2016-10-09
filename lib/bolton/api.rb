@@ -22,7 +22,7 @@ module Bolton
     end
 
     def method_missing(method, *args)
-      if method =~ /^[a-zA-Z_\d]*$/
+      if http_compliant?(method)
         request.update(method, args.first)
         self
       else
@@ -31,7 +31,11 @@ module Bolton
     end
 
     def respond_to_missing?(method, *)
-      method =~ /^[a-zA-Z_\d]*$/
+      http_compliant?(method)
+    end
+
+    def http_compliant?(method_name)
+      method_name =~ /^[a-zA-Z_\d]*$/
     end
   end
 end
