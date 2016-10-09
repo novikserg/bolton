@@ -1,7 +1,6 @@
 require "test_helper"
 require_relative "json_placeholder"
 require_relative "stripe"
-require "byebug"
 
 describe JsonPlaceholder do
   before do

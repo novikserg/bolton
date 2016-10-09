@@ -24,16 +24,17 @@ module Bolton
       @options = options
     end
 
-    def update(method, resource_id = nil)
-      @url << "/#{method}"
-      @url << "/#{resource_id}" if resource_id
+    def update_url(method, resource_id = nil)
+      @url = [url, method, resource_id].compact.join("/")
     end
 
     private
 
+    attr_reader :url
+
     def request(method, query_params = {})
       options = { query: query_params, body: query_params, basic_auth: @options[:basic_auth] }
-      response = HTTParty.public_send(method, @url, options)
+      response = HTTParty.public_send(method, url, options)
       parsed_response(response)
     end
 

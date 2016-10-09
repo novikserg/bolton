@@ -23,7 +23,7 @@ module Bolton
 
     def method_missing(method, *args)
       if http_compliant?(method)
-        request.update(method, args.first)
+        request.update_url(method, args.first)
         self
       else
         super

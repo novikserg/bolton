@@ -1,6 +1,400 @@
 ---
 http_interactions:
 - request:
+    method: post
+    uri: http://jsonplaceholder.typicode.com/?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
+    body:
+      encoding: UTF-8
+      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 09 Oct 2016 03:31:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0340ac502a1ac72f495e396ca5bd2d4f1475983870; expires=Mon, 09-Oct-17
+        03:31:10 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, X-HTTP-Method-Override, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"2-mZFLkyvTelC5g8XnyQrpOw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2eeec21827574e8a-DME
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:31:11 GMT
+- request:
+    method: get
+    uri: https://api.stripe.com/v1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic c2tfdGVzdF9iTTZ2OGFsSzBTVzZCSzAwd2xyNnpJcUM6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Oct 2016 03:31:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '143'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Request-Id:
+      - req_9LEU0x3a8MMaye
+      Stripe-Version:
+      - '2015-03-24'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "type": "invalid_request_error",
+            "message": "See https://stripe.com/docs for information on integrating our API."
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:31:12 GMT
+- request:
+    method: put
+    uri: http://jsonplaceholder.typicode.com/?userId=12
+    body:
+      encoding: UTF-8
+      string: userId=12
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 09 Oct 2016 03:31:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc82d8d96bf44355450ca8253c6561c501475983872; expires=Mon, 09-Oct-17
+        03:31:12 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"2-mZFLkyvTelC5g8XnyQrpOw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2eeec22497734e8a-DME
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:31:12 GMT
+- request:
+    method: get
+    uri: https://api.stripe.com/charges/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic c2tfdGVzdF9iTTZ2OGFsSzBTVzZCSzAwd2xyNnpJcUM6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Oct 2016 03:32:04 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '200'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Request-Id:
+      - req_9LEVfg6adFISNT
+      Stripe-Version:
+      - '2015-03-24'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "type": "invalid_request_error",
+            "message": "Unrecognized request URL (GET: /charges/). Please see https://stripe.com/docs or we can help at https://support.stripe.com/."
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:32:04 GMT
+- request:
+    method: put
+    uri: http://jsonplaceholder.typicode.com/1?userId=12
+    body:
+      encoding: UTF-8
+      string: userId=12
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 09 Oct 2016 03:40:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dda1f055707f47f67406837449d4874781475984442; expires=Mon, 09-Oct-17
+        03:40:42 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"2-mZFLkyvTelC5g8XnyQrpOw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2eeed00fb6c64e8a-DME
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:40:43 GMT
+- request:
+    method: post
+    uri: http://jsonplaceholder.typicode.com/posts/?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
+    body:
+      encoding: UTF-8
+      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 09 Oct 2016 03:42:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '78'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd3691e0431235c8501193a3ae85aafcc1475984529; expires=Mon, 09-Oct-17
+        03:42:09 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, X-HTTP-Method-Override, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2eeed22b91b84ea2-DME
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "title": "Michael Bolton",
+          "body": "is a major cinaphile",
+          "id": 101
+        }
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:42:09 GMT
+- request:
+    method: get
+    uri: https://api.stripe.com/v1/charges/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic c2tfdGVzdF9iTTZ2OGFsSzBTVzZCSzAwd2xyNnpJcUM6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Oct 2016 03:42:10 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '203'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Request-Id:
+      - req_9LEf7HRPnE5gGR
+      Stripe-Version:
+      - '2015-03-24'
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "type": "invalid_request_error",
+            "message": "Unrecognized request URL (GET: /v1/charges/). Please see https://stripe.com/docs or we can help at https://support.stripe.com/."
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:42:11 GMT
+- request:
     method: get
     uri: https://api.stripe.com/v1/charges
     body:
@@ -23,7 +417,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 07 Oct 2016 05:29:57 GMT
+      - Sun, 09 Oct 2016 03:54:12 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -41,7 +435,7 @@ http_interactions:
       Cache-Control:
       - no-cache, no-store
       Request-Id:
-      - req_9KVxOwGe4OOKbj
+      - req_9LErSUqduo5ftO
       Stripe-Version:
       - '2015-03-24'
       Strict-Transport-Security:
@@ -243,68 +637,7 @@ http_interactions:
           "url": "/v1/charges"
         }
     http_version: 
-  recorded_at: Fri, 07 Oct 2016 05:29:57 GMT
-- request:
-    method: post
-    uri: http://jsonplaceholder.typicode.com/posts?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
-    body:
-      encoding: UTF-8
-      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      Date:
-      - Fri, 07 Oct 2016 05:29:58 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '78'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d76600be9a70bae70d78b1051a2d79c1e1475818197; expires=Sat, 07-Oct-17
-        05:29:57 GMT; path=/; domain=.typicode.com; HttpOnly
-      X-Powered-By:
-      - Express
-      Vary:
-      - Origin, X-HTTP-Method-Override, Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
-      Via:
-      - 1.1 vegur
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2edef55972d84ec6-DME
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "title": "Michael Bolton",
-          "body": "is a major cinaphile",
-          "id": 101
-        }
-    http_version: 
-  recorded_at: Fri, 07 Oct 2016 05:29:58 GMT
+  recorded_at: Sun, 09 Oct 2016 03:54:12 GMT
 - request:
     method: put
     uri: http://jsonplaceholder.typicode.com/posts/1?userId=12
@@ -324,7 +657,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 07 Oct 2016 05:29:59 GMT
+      - Sun, 09 Oct 2016 03:54:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -332,8 +665,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d1894dc13f7e23f5d3ff80779ac60c6ce1475818198; expires=Sat, 07-Oct-17
-        05:29:58 GMT; path=/; domain=.typicode.com; HttpOnly
+      - __cfduid=d57b1f6bd354e2df7ba1d4f71fc8069e51475985252; expires=Mon, 09-Oct-17
+        03:54:12 GMT; path=/; domain=.typicode.com; HttpOnly
       X-Powered-By:
       - Express
       Vary:
@@ -355,7 +688,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2edef55d86c74ec6-DME
+      - 2eeee3d2c69e4ecc-DME
     body:
       encoding: UTF-8
       string: |-
@@ -364,5 +697,66 @@ http_interactions:
           "id": 1
         }
     http_version: 
-  recorded_at: Fri, 07 Oct 2016 05:29:59 GMT
+  recorded_at: Sun, 09 Oct 2016 03:54:12 GMT
+- request:
+    method: post
+    uri: http://jsonplaceholder.typicode.com/posts?body=is%20a%20major%20cinaphile&title=Michael%20Bolton
+    body:
+      encoding: UTF-8
+      string: title=Michael%20Bolton&body=is%20a%20major%20cinaphile
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 09 Oct 2016 03:54:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '78'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d25925d9e372a2707785d19ce9fd572ca1475985252; expires=Mon, 09-Oct-17
+        03:54:12 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, X-HTTP-Method-Override, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"4e-HESwjKlJYVe/h5z+UMmNlw"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2eeee3d725164e8a-DME
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "title": "Michael Bolton",
+          "body": "is a major cinaphile",
+          "id": 101
+        }
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 03:54:13 GMT
 recorded_with: VCR 3.0.3
