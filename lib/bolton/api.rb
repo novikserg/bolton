@@ -5,16 +5,24 @@ module Bolton
   module API
     extend Forwardable
 
-    private
-
     def_delegators :request, :get, :post, :put, :patch, :delete
 
-    def api_url
-      raise NotImplementedError
+    attr_reader :api_url
+
+    def self.included(base)
+      base.extend ClassMethods
+    end
+
+    module ClassMethods
+      def set_api_url(url)
+        define_method(:api_url) do
+          @api_url ||= url
+        end
+      end
     end
 
     def default_options
-      {}
+      default_params || {}
     end
 
     def request

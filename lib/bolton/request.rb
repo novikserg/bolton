@@ -19,21 +19,21 @@ module Bolton
     add_method :patch
     add_method :delete
 
-    def initialize(url, options)
-      @url = url
-      @options = options
+    attr_accessor :url, :default_options
+
+    def initialize(url, default_options)
+      self.url = url
+      self.default_options = default_options
     end
 
     def update_url(method, resource_id = nil)
-      @url = [url, method, resource_id].compact.join("/")
+      self.url = [url, method, resource_id].compact.join("/")
     end
 
     private
 
-    attr_reader :url
-
     def request(method, query_params = {})
-      options = { query: query_params, body: query_params, basic_auth: @options[:basic_auth] }
+      options = { query: query_params, body: query_params, basic_auth: default_options[:basic_auth] }
       response = HTTParty.public_send(method, url, options)
       parsed_response(response)
     end
